@@ -23,7 +23,7 @@ const features = [
   },
   {
     name: 'Community Governance',
-    description: 'Have a say in the project's future and developments.',
+    description: 'Have a say in the project\'s future and developments.',
     icon: '🏛️'
   },
   {
