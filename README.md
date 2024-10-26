@@ -1,6 +1,11 @@
-f# FatFrog Kingdom Quest
+# FatFrog Kingdom Quest
 
 A vibrant meme coin and gaming ecosystem with NFT integration, staking rewards, and cross-chain platform capabilities.
+
+## Project Locations
+
+- **Local Development**: `/Users/web3/Desktop/FatFrog-Kingdom`
+- **GitHub Repository**: [FatFrog-Kingdom](https://github.com/yourusername/FatFrog-Kingdom)
 
 ## Project Structure
 
@@ -24,6 +29,7 @@ fatfrog-kingdom/
 │   ├── contracts/      # Solidity contracts
 │   ├── scripts/        # Deployment scripts
 │   └── test/          # Contract tests
+├── scripts/            # Project setup scripts
 ├── package.json        # Root package.json
 └── .env               # Environment variables
 ```
@@ -39,10 +45,11 @@ fatfrog-kingdom/
 
 ## Quick Start
 
-1. Clone the repository:
+### Local Development Setup
+
+1. Navigate to the project directory:
    ```bash
-   git clone https://github.com/yourusername/fatfrog-kingdom.git
-   cd fatfrog-kingdom
+   cd /Users/web3/Desktop/FatFrog-Kingdom
    ```
 
 2. Install dependencies:
@@ -61,22 +68,31 @@ fatfrog-kingdom/
    npm run backend:dev
    ```
 
-5. Verify smart contract (optional):
+### GitHub Setup
+
+1. Install GitHub CLI (if not already installed):
    ```bash
-   npm run contracts:verify
+   brew install gh
    ```
 
-## Available Scripts
+2. Run the GitHub setup script:
+   ```bash
+   ./scripts/setup-github.sh
+   ```
 
-- `npm run install:all` - Install all dependencies (root, backend, smart-contracts)
-- `npm run backend:dev` - Start backend in development mode
-- `npm run backend:start` - Start backend in production mode
-- `npm run contracts:compile` - Compile smart contracts
-- `npm run contracts:verify` - Verify smart contracts on Avalanche network
+3. Follow the prompts to authenticate and create your GitHub repository
 
 ## Smart Contracts
 
 FROG Token Contract: [0xf9b864b6d7B2f6348f6adDE5557c676f14FB53e8](https://snowtrace.io/token/0xf9b864b6d7B2f6348f6adDE5557c676f14FB53e8)
+
+## Available Scripts
+
+- `npm run install:all` - Install all dependencies
+- `npm run backend:dev` - Start backend in development mode
+- `npm run backend:start` - Start backend in production mode
+- `npm run contracts:compile` - Compile smart contracts
+- `npm run contracts:verify` - Verify contracts on Avalanche
 
 ## API Endpoints
 
