@@ -1,0 +1,29 @@
+{
+  "name": "fatfrog-kingdom",
+  "version": "1.0.0",
+  "description": "FatFrog Kingdom Quest - A Web3 Gaming Ecosystem",
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../smart-contracts && npm install",
+    "backend:dev": "cd backend && npm run dev",
+    "backend:start": "cd backend && npm start",
+    "contracts:compile": "cd smart-contracts && npx hardhat compile",
+    "contracts:verify": "cd smart-contracts && npx hardhat run scripts/verify.js --network avalanche"
+  },
+  "workspaces": [
+    "backend",
+    "smart-contracts"
+  ],
+  "keywords": [
+    "blockchain",
+    "gaming",
+    "nft",
+    "defi",
+    "avalanche"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.2"
+  }
+}
